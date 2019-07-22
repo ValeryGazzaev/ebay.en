@@ -309,7 +309,7 @@
 	top: 50%;
 	left: -23px;
 	-webkit-transform: translateY(-44.5%);
-	        transform: translateY(-44.5%);
+	transform: translateY(-44.5%);
 	width: 16px;
 	height: 16px;
 	background-image: url("../../img/sprite.png");
@@ -321,7 +321,7 @@
 	content: "";
 	top: 50%;
 	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	transform: translateY(-50%);
 	right: -15px;
 	display: block;
 	border: 4px solid #86b817;
@@ -358,7 +358,7 @@
 	top: 50%;
 	right: 25px;
 	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	transform: translateY(-50%);
 	width: 30px;
 	height: 16px;
 	border-top: 2px solid #86b817; 
@@ -371,7 +371,7 @@
 	content: "";
 	top: 50%;
 	-webkit-transform: translateY(-49%);
-	        transform: translateY(-49%);
+	transform: translateY(-49%);
 	width: 100%;
 	height: 2px;
 	background-color: #86b817;
@@ -406,6 +406,10 @@
 	text-decoration: underline;
 }
 
+.header-nav-menu-inner a:focus {
+	color: #eee;
+}
+
 .header-nav-menu p {
 	font-size: 13px;
 	background-color: #86b817;
@@ -413,6 +417,73 @@
 	padding: 9px 16px;
 	white-space: nowrap;
 }
+
+/* header middle */
+
+.header-middle-menu {
+	position: relative;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.17);
+	flex-basis: 265px;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.header-middle-menu a {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	margin-left: 16px;
+	padding-top: 1px;
+	color: #4c4c4c;
+	font-size: 14px;
+	line-height: 46px;
+	font-weight: 500;
+}
+
+.header-middle-menu > li {
+	position: relative;
+}
+
+.header-middle-menu li i {
+	position: absolute;
+	content: "";
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 6px;
+	height: 10px;
+	font-size: 11px;
+	color: #7a7a7a;
+}
+
+.header-middle-menu li ul {
+	position: absolute;
+	top: 0;
+	right: -265px;
+	width: 265px;
+	display: none;
+	background-color: #fff;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.17);
+	font-weight: 500;
+}
+
+.header-middle-menu li:hover  ul {
+	display: block;
+}
+
+.header-middle-menu li:hover i {
+	color: #fff;
+}
+
+.header-middle-menu li:hover {
+	background-color: #86b817;
+}
+
+.header-middle-menu a:hover {
+	color: #fff;
+}
+
+/* Slider */
 
 
 @media (max-width: 1160px) {
@@ -449,7 +520,6 @@
 		opacity: 1;
 		visibility: visible;
 	}
-
 }
 
 
