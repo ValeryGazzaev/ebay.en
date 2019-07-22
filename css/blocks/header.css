@@ -201,17 +201,24 @@
 	position: absolute;
 	box-sizing: border-box;
 	width: 200px;
-	top: 50px;
-	right: -35px;
+	top: 45px;
+	right: -15px;
 	border-radius: 5px;
 	background-color: #3f4246;
 	text-align: right;
 	opacity: 0;
 	visibility: hidden;
-	transition-property: opacity visibility;
+	transition-property: visibility opacity ;
 	transition-duration: 0.3s;
 	transition-timing-function: ease;
+	z-index: 10;
 }
+
+#dd-menu-btn:checked ~ .dd-account-menu {
+	opacity: 1;
+	visibility: visible;
+} 
+
 
 .header-rigth-block .my-account .dd-account-menu li {
 	width: 100%;
@@ -275,12 +282,6 @@
 } 
 
 
-#dd-menu-btn:checked ~ .dd-account-menu {
-	opacity: 1;
-	visibility: visible;
-} 
-
-
 /* header navigation menu */
 .header-nav-menu a,
 .header-nav-menu {
@@ -319,9 +320,10 @@
 .header-nav-menu p {
 	font-size: 13px;
 	background-color: #86b817;
-	flex-basis: 255px;
-	padding: 9px 0;
-	padding-left: 16px;
+	flex-basis: 239px;
+	padding: 9px 16px;
+	
+	white-space: nowrap;
 }
 
 
@@ -359,20 +361,21 @@
 		margin-left:  40px;	
 	}
 	.header-rigth-block > a {
-
 		margin-right: 40px;
 	}
 }
 
 
 @media (max-width: 560px) {
-.header-search-form {
-	display: none;
-}
-.header-logo {
-	margin: 0;
-}
+	.header-search-form {
+		display: none;
+	}
+	.header-logo {
+		margin: 0;
+	}
 	.header-rigth-block .my-account [for="dd-menu-btn"] {
 		margin-left:  20px;	
 	}
 }
+
+
