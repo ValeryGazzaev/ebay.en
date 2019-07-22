@@ -307,7 +307,7 @@
 .header-nav-menu label {
 	position: relative;
 	top: 50%;
-	right: 25px;
+	right: 15px;
 	transform: translateY(-50%);
 	width: 30px;
 	height: 16px;
@@ -346,7 +346,7 @@
 	content: "";
 	top: 0;
 	right: 15px;
-	width: 95%;
+	width: 88%;
 	height: 1px;
 	background-color: rgba(255, 255, 255, 0.1);
 }
@@ -373,7 +373,7 @@
 		position: absolute;
 		display: block;
 		top: 44px;
-		right: 19px;
+		right: 15px;
 		width: 135px;
 		height: 265px;
 		background-color: #86b817;
@@ -382,7 +382,7 @@
 		opacity: 0;
 		visibility: hidden;
 		transition-property: opacity visibility;
-		transition-duration: 0.3s;
+		transition-duration: 0.1s;
 		transition-timing-function: ease;
 	}
 	.header-nav-menu-inner a {
