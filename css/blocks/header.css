@@ -23,8 +23,19 @@
 	padding: 9px 0 12px;
 }
 
+.header-top-line .my-account {
+	position: relative;
+}
+
+.header-top-line .my-account input {
+	display: none;
+}
+
 .header-top-line .my-account .dd-account-menu {
 	display: none;
+	position: absolute;
+	top: 50px;
+	right: 0;
 }
 
 #search-btn  {
@@ -79,7 +90,7 @@
 	font-size: 13px;
 	line-height: 26px;
 	font-weight: 700;
-	color: #a3a9ad;
+	color: #6e747a;
 	max-width: 160px;
 	height: 100%;
 	border-left: 1px solid #c4cacf;
@@ -93,11 +104,13 @@
 	height: 100%;
 	border-radius: 0 4px 4px 0; 
 	background-color: #2a96d4;
-	background-image: url("../../");
+	color: #fff;
 	text-align: center;
 }
 
-
+#dd-menu-btn:checked ~ .dd-account-menu {
+	display: block;
+} 
 
 .header-rigth-block {
 	flex-basis: 359px;
