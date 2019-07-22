@@ -7,7 +7,6 @@
 .header-nav-menu,
 .header-rigth-block,
 .header-top-line {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -66,12 +65,55 @@
 	max-width: 410px;
 }
 
+.header-search-form [type="search"]::-webkit-input-placeholder {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #a3a9ad;
+}
+
+.header-search-form [type="search"]::-moz-placeholder {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #a3a9ad;
+}
+
+.header-search-form [type="search"]:-ms-input-placeholder {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #a3a9ad;
+}
+
+.header-search-form [type="search"]::-ms-input-placeholder {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #a3a9ad;
+}
+
 .header-search-form [type="search"]::placeholder {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
-	line-height: 26px;
-	font-weight: 700;
+	font-weight: 600;
 	color: #a3a9ad;
+}
+
+.header-search-form [type="search"]:focus::-webkit-input-placeholder {
+	font-size: 0;
+}
+
+.header-search-form [type="search"]:focus::-moz-placeholder {
+	font-size: 0;
+}
+
+.header-search-form [type="search"]:focus:-ms-input-placeholder {
+	font-size: 0;
+}
+
+.header-search-form [type="search"]:focus::-ms-input-placeholder {
+	font-size: 0;
 }
 
 .header-search-form [type="search"]:focus::placeholder {
@@ -88,13 +130,12 @@
 	background-image: url("../../img/backup/arrow_down.png");
 }
 
-
 .header-search-form .select-wrap-arrow select {
 	font-family: 'Montserrat', sans-serif;
 	text-indent: 15px;
 	font-size: 13px;
 	line-height: 26px;
-	font-weight: 700;
+	font-weight: 600;
 	color: #6e747a;
 	width: 100%;
 	height: 100%;
@@ -102,6 +143,12 @@
 	border-left: 1px solid #c4cacf;
 	-webkit-appearance: none;
 	padding: 5px 5px;
+}
+
+@-moz-document url-prefix() {
+	.header-search-form .select-wrap-arrow select {
+		text-indent: 5px;
+	}
 }
 
 .header-search-form label {
@@ -201,11 +248,12 @@
 	position: absolute;
 	box-sizing: border-box;
 	width: 200px;
-	top: 45px;
-	right: -15px;
+	top: 44px;
+	right: -35px;
 	border-radius: 5px;
 	background-color: #3f4246;
 	text-align: right;
+	box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 1);
 	opacity: 0;
 	visibility: hidden;
 	transition-property: visibility opacity ;
@@ -218,7 +266,6 @@
 	opacity: 1;
 	visibility: visible;
 } 
-
 
 .header-rigth-block .my-account .dd-account-menu li {
 	width: 100%;
@@ -261,7 +308,8 @@
 	display: block;
 	top: 50%;
 	left: -23px;
-	transform: translateY(-44.5%);
+	-webkit-transform: translateY(-44.5%);
+	        transform: translateY(-44.5%);
 	width: 16px;
 	height: 16px;
 	background-image: url("../../img/sprite.png");
@@ -272,7 +320,8 @@
 	position: absolute;
 	content: "";
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	right: -15px;
 	display: block;
 	border: 4px solid #86b817;
@@ -307,8 +356,9 @@
 .header-nav-menu label {
 	position: relative;
 	top: 50%;
-	right: 15px;
-	transform: translateY(-50%);
+	right: 25px;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	width: 30px;
 	height: 16px;
 	border-top: 2px solid #86b817; 
@@ -320,14 +370,14 @@
 	position: absolute;
 	content: "";
 	top: 50%;
-	transform: translateY(-49%);
+	-webkit-transform: translateY(-49%);
+	        transform: translateY(-49%);
 	width: 100%;
 	height: 2px;
 	background-color: #86b817;
 }
 
 .header-nav-menu-inner {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -346,7 +396,7 @@
 	content: "";
 	top: 0;
 	right: 15px;
-	width: 88%;
+	width: 95%;
 	height: 1px;
 	background-color: rgba(255, 255, 255, 0.1);
 }
@@ -373,7 +423,7 @@
 		position: absolute;
 		display: block;
 		top: 44px;
-		right: 15px;
+		right: 19px;
 		width: 135px;
 		height: 265px;
 		background-color: #86b817;
