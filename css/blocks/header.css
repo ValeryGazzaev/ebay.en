@@ -16,7 +16,7 @@
 }
 
 .header-logo {
-	margin-left: 3px;
+	margin: 0 30px  0 3px;
 }
 
 .header-top-line {
@@ -48,6 +48,7 @@
 	border-radius: 4px;
 	line-height: 36px; 
 	box-sizing: border-box;
+	margin-right: auto;
 }
 
 .search-bar {
@@ -115,8 +116,87 @@
 	text-align: center;
 }
 
-.header-top-line .my-account .dd-account-menu {
-	display: none;
+.header-rigth-block {
+	justify-content: flex-start;
+	-ms-align-items: center;
+	align-items: center;
+	width: 340px;
+	margin-right: 15px;
+}
+
+.header-rigth-block > a {
+	position: relative;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 16px;
+	text-indent: 23px;
+	color: #fff;	
+	width: 16px;
+	height: 16px;
+	background-image: url("../../img/sprite.png");
+	background-position: -20px -210px;
+	vertical-align: middle;
+	margin-right: 94px;
+}
+
+.header-rigth-block .wishlist {
+	background-position: -20px -245px;
+}
+
+.header-rigth-block .cart::before {
+  position: absolute;
+	content: "4";
+	right: -61px;
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+  line-height: 16px;
+  text-indent: 0;
+	background-color: #86b817;
+	text-align: center;
+	border-radius: 2px; 
+}
+
+.header-rigth-block .cart::after {
+	position: absolute;
+	content: "";
+	right: -45px;
+	top: 5px;
+	border: 3px solid #86b817;
+	border-left-width: 0;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.header-rigth-block .wishlist::before {
+	 position: absolute;
+	content: "27";
+	right: -90px;
+  width: 21px;
+  height: 16px;
+  font-size: 11px;
+  line-height: 16px;
+  text-indent: 0;
+	background-color: #86b817;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.header-rigth-block .wishlist::after {
+	position: absolute;
+	content: "";
+	right: -69px;
+	top: 5px;
+	border: 3px solid #86b817;
+	border-left-width: 0;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+/* account drop-down menu */
+
+.header-rigth-block .my-account .dd-account-menu {
 	position: absolute;
 	box-sizing: border-box;
 	width: 200px;
@@ -125,44 +205,80 @@
 	border-radius: 5px;
 	background-color: #3f4246;
 	text-align: right;
+	opacity: 0;
+	visibility: hidden;
+	transition-property: opacity visibility;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
 }
 
-.header-top-line .my-account .dd-account-menu li {
+.header-rigth-block .my-account .dd-account-menu li {
 	width: 100%;
 }
 
-.header-top-line .my-account .dd-account-menu li:hover {
+.header-rigth-block .my-account .dd-account-menu li:hover {
 	background-color: #fff;
 }
 
-.header-top-line .my-account .dd-account-menu a {
+.header-rigth-block .my-account .dd-account-menu a {
 	display: block;
 	margin-right: 10px;
-}
-
-.header-top-line .my-account .dd-account-menu a:hover {
-	color: #000;
-}
-
-.header-top-line .my-account [for="dd-menu-btn"] {
-	font-size: 13px;
-	line-height: 26px;
-	color: #fff;
-}
-
-#dd-menu-btn:checked ~ .dd-account-menu {
-	display: block;
-} 
-
-.header-rigth-block {
-	justify-content: space-around;
-	flex-basis: 360px;
-}
-
-.header-rigth-block a {
 	text-decoration: none;
 	font-size: 13px;
 	line-height: 26px;
 	color: #fff;
 }
+
+.header-rigth-block .my-account .dd-account-menu a:hover {
+	color: #000;
+}
+
+.header-rigth-block .my-account [for="dd-menu-btn"] {
+	position: relative;
+	top: -1px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #fff;
+	vertical-align: middle;
+	white-space: nowrap;
+	margin-left: 45px;
+}
+
+.header-rigth-block .my-account [for="dd-menu-btn"]::before {
+	position: absolute;
+	content: "";
+	display: block;
+	top: 50%;
+	left: -23px;
+	transform: translateY(-44.5%);
+	width: 16px;
+	height: 16px;
+	background-image: url("../../img/sprite.png");
+	background-position: -20px -281px;
+} 
+
+.header-rigth-block .my-account [for="dd-menu-btn"]::after {
+	position: absolute;
+	content: "";
+	top: 50%;
+	transform: translateY(-50%);
+	right: -15px;
+	display: block;
+	border: 4px solid #86b817;
+	border-bottom-width: 0;
+	border-left-color: transparent;
+	border-right-color: transparent;
+} 
+
+
+#dd-menu-btn:checked ~ .dd-account-menu {
+	opacity: 1;
+	visibility: visible;
+} 
+
+
+
 
