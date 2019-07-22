@@ -31,13 +31,6 @@
 	display: none;
 }
 
-.header-top-line .my-account .dd-account-menu {
-	display: none;
-	position: absolute;
-	top: 50px;
-	right: 0;
-}
-
 #search-btn  {
 	display: none;
 }
@@ -108,10 +101,55 @@
 	text-align: center;
 }
 
+.header-top-line .my-account .dd-account-menu {
+	display: none;
+	position: absolute;
+	box-sizing: border-box;
+	width: 200px;
+	top: 50px;
+	right: -35px;
+	border-radius: 5px;
+	background-color: #3f4246;
+	text-align: right;
+}
+
+.header-top-line .my-account .dd-account-menu li {
+	width: 100%;
+
+}
+
+.header-top-line .my-account .dd-account-menu li:hover {
+	background-color: #fff;
+}
+
+.header-top-line .my-account .dd-account-menu a {
+	display: block;
+	margin-right: 10px;
+}
+
+.header-top-line .my-account .dd-account-menu a:hover {
+	color: #000;
+}
+
+.header-top-line .my-account [for="dd-menu-btn"] {
+	font-size: 13px;
+	line-height: 26px;
+	color: #fff;
+}
+
 #dd-menu-btn:checked ~ .dd-account-menu {
 	display: block;
 } 
 
 .header-rigth-block {
-	flex-basis: 359px;
+	justify-content: space-around;
+	flex-basis: 360px;
 }
+
+.header-rigth-block a {
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 26px;
+	color: #fff;
+}
+
