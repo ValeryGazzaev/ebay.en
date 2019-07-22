@@ -1,0 +1,104 @@
+.header-top {
+	background-color: #3f4246;
+}
+
+.header-search-form,
+.header-middle,
+.header-nav-menu,
+.header-rigth-block,
+.header-top-line {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-logo {
+	margin-left: 3px;
+}
+
+.header-top-line {
+	padding: 9px 0 12px;
+}
+
+.header-top-line .my-account .dd-account-menu {
+	display: none;
+}
+
+#search-btn  {
+	display: none;
+}
+
+.header-top-line {
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.header-search-form {
+	position: relative;
+	width: 630px;
+	height: 36px;
+	background-color: #fff;
+	border-radius: 4px;
+	line-height: 36px; 
+	box-sizing: border-box;
+}
+
+.search-bar {
+	padding-left: 20px;
+	vertical-align: middle;
+}
+
+.header-search-form select,
+.header-search-form input {
+	border: none;
+	outline: none;
+}
+
+.header-search-form [type="search"] {
+	width: 410px;
+
+}
+
+.header-search-form [type="search"]::placeholder {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #a3a9ad;
+}
+
+.header-search-form [type="search"]:focus::placeholder {
+	font-size: 0;
+}
+
+.header-search-form select {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #a3a9ad;
+	max-width: 160px;
+	height: 100%;
+	border-left: 1px solid #c4cacf;
+}
+
+.header-search-form label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	border-radius: 0 4px 4px 0; 
+	background-color: #2a96d4;
+	background-image: url("../../");
+	text-align: center;
+}
+
+
+
+.header-rigth-block {
+	flex-basis: 359px;
+}
