@@ -39,7 +39,6 @@
 }
 
 .trending-collection {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -76,7 +75,6 @@
 }
 
 .trending-backyard {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -84,8 +82,8 @@
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: space-between;
-	width: 194px;
-	margin: 0 auto;
+	width: 200px;
+	margin: 17px auto;
 }
 
 .trending-backyard .trending-blocks-images {
@@ -94,13 +92,17 @@
 	background-image: url("../../img/other/today-products-photo-1.jpg");	
 }
 
+.trending-backyard .image-3 {
+	background-image: url("../../img/other/today-products-photo-2.jpg");	
+}
+
 .trending-backyard-text {
 	white-space: nowrap;
 }
 
 .trending-backyard-text p {
 	color: #575757;
-	line-height: 26px;
+	line-height: 22px;
 	font-weight: 500;
 }
 
