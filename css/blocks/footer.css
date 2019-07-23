@@ -102,7 +102,8 @@
 	height: 40px;
 	background-color: #44609d;
 	border-radius: 4px;
-	line-height: 40px;
+	font-size: 18px;
+	line-height: 42px;
 	text-align: center;
 	vertical-align: middle;
 	color: #fff;
@@ -118,4 +119,20 @@
 
 .copyright-social-buttons .in-btn  {
 	background-color: #0177b5;
+}
+
+.copyright-social-buttons .fb-btn:hover {
+	background-color: #EBB857;
+}
+
+.copyright-social-buttons .tt-btn:hover {
+	background-color: #FFA740;
+}
+
+.copyright-social-buttons .gg-btn:hover {
+	background-color: #26A53C;
+}
+
+.copyright-social-buttons .in-btn:hover  {
+	background-color: #FF8B00;
 }
