@@ -1,0 +1,26 @@
+.footer {
+	background-color: #202326;
+}
+
+.footer-block-2,
+.footer-blocks {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-blocks a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+[class^="footer-block-"] ul li:nth-of-type(1) a {
+	font-size: 16px;
+	line-height: 26px;
+	color: #a3a9ad;
+}
