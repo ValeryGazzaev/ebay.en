@@ -12,6 +12,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 25px 0;
+	border-bottom: 1px solid #dde2e6;
 }
 
 .trending-head > a {
@@ -44,6 +45,7 @@
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	margin-top: -1px;
 }
 
 .trending-blocks {
@@ -112,4 +114,38 @@
 
 .trending-backyard-text p:nth-child(2) {
 	font-size: 12px;
+}
+
+@media (max-width: 980px) {
+	.trending-collection {
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 10px;
+	}
+	.trending-blocks {
+		margin-bottom: 10px;
+		width: 48%;
+	}
+}
+
+@media (max-width: 680px) {
+	.trending-head {
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.trending-head > a,
+	.trending-head > p {
+		margin: auto;
+	}
+	.trending-blocks {
+		width: 292.5px;
+	}
+}
+
+@media (max-width: 360px) {
+	.trending-head > p {
+		text-align: center;
+	}
 }
