@@ -1,0 +1,113 @@
+.trending {
+	background-color: #fff;
+	margin-bottom: 36px;
+	border: 1px solid #dde2e6;
+	border-radius: 4px;
+}
+
+.trending-head {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0;
+}
+
+.trending-head > a {
+	margin-right: 30px;
+	font-size: 13px;
+	line-height: 26px;
+	font-weight: 600;
+	color: #0064d2;
+}
+
+.trending-head a:hover {
+	color: #86b817;
+}
+
+.trending-head a:active {
+	color: #545252;
+}
+
+.trending-head > a {
+	margin-right: 30px;
+}
+
+.trending-head > p {
+	margin-left: 30px;
+}
+
+.trending-collection {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trending-blocks {
+	width: 292.5px;
+	border: 1px solid #dde2e6;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+
+.trending-blocks a {
+	display: block;
+	width: 100%;
+	height: 207px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../../img/products/today-products-1.jpg");
+}
+
+.trending-collection .block-2 a {
+	background-image: url("../../img/products/today-products-2.jpg");
+}
+
+.trending-collection .block-3 a {
+	background-image: url("../../img/products/today-products-3.jpg");
+}
+
+.trending-collection .block-4 a {
+	background-image: url("../../img/products/today-products-4.jpg");
+}
+
+.trending-backyard {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 194px;
+	margin: 0 auto;
+}
+
+.trending-backyard .trending-blocks-images {
+	width: 42px;
+	height: 42px;
+	background-image: url("../../img/other/today-products-photo-1.jpg");	
+}
+
+.trending-backyard-text {
+	white-space: nowrap;
+}
+
+.trending-backyard-text p {
+	color: #575757;
+	line-height: 26px;
+	font-weight: 500;
+}
+
+.trending-backyard-text p:nth-child(1) {
+	font-size: 14px;
+}
+
+.trending-backyard-text p:nth-child(2) {
+	font-size: 12px;
+}

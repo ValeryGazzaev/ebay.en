@@ -31,8 +31,8 @@
 .deals-head a:hover {
 	color: #86b817;
 }
-.collections-products-blocks a:active,
-.collections-head a:active {
+
+.deals-head a:active {
 	color: #545252;
 }
 
@@ -246,7 +246,6 @@
 	-webkit-transform: translateX(-1186px);
 	        transform: translateX(-1186px);
 }
-
 
 @media (max-width: 1160px) {
 	.deals-slider-controls .deals-slider-arrows {
