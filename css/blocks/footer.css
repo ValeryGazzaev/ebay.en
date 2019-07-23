@@ -73,8 +73,8 @@
 }
 
 .copyright-wrap {
-	-ms-align-items: center;
-	align-items: center;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
 }
 
 .copyright-social {
